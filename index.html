@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+<div class="crud">
+<div class="head">
+    <h2>CRUDs</h2>
+    <p>PRODUCT MANAGEMENT SYSTEM</p>
+
+<br>
+<center>
+   
+    
+<div class="info">
+
+   
+    <div class="info__title"> Our link<a href="https://soon121.github.io/VAN/" class="van">V_A_N</a></div>
+    <div class="info__close"><svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z" fill="#393a37"></path></svg></div>
+</div>    
+   
+
+
+</center>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="inputs">
+<input placeholder="title" type="text" id="title">
+<div class="price">
+<input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+<input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+<input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+<input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+
+<small id="total"></small> 
+</div>
+<input type="number" id="count" placeholder="count">
+<input type="number" id="category" placeholder="category">
+
+<button id="submit">Create</button>
+</div>
+
+<div class="outputs" >
+<div class="searchBlock">
+    <input  onkeyup= "searchData(this.value)"     type="text" id="search" placeholder="search">
+   <div class="btnsearch">
+    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+   </div> 
+
+</div>
+
+<div id="deleteAll">
+
+</div>
+
+<table>
+    <tr>
+    <th>id</th>
+    <th>title</th>
+    <th> price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>total</th>
+    <th>category</th>
+<th>update</th>
+<th>delete</th>
+    </tr>
+    <tbody id="tbody">
+   
+
+    </tbody>
+</table>
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="crud.js"></script>
+</body>
+</html>
